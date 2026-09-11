@@ -1,1 +1,2 @@
 Internship App
+Internship Management
