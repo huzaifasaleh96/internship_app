@@ -1,33 +1,62 @@
-### Internship App
+# Internship Management App
 
-Internship project management application for managing tasks, projects, and internship activities.
+A custom ERPNext/Frappe application developed to manage internship tasks and track internship activities.
 
-### Installation
+## Project Overview
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+The Internship Management App is a custom application created as part of an internship project. It provides a simple system for creating, managing, and tracking internship tasks.
 
-```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch main
-bench install-app internship_app
-```
+## Features
 
-### Contributing
+- Create and manage internship tasks
+- Track task status
+- Set task priority
+- Record intern details
+- Set start and end dates
+- Add task descriptions
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+## Custom Module
 
-```bash
-cd apps/internship_app
-pre-commit install
-```
+### Internship Management
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+The application contains a custom **Internship Management** module.
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+### Internship Task
 
-### License
+The Internship Task DocType is used to record and manage internship work.
 
-mit
+## Technologies Used
+
+- Frappe Framework
+- ERPNext
+- Python
+- JavaScript
+- MariaDB
+- Redis
+- Git & GitHub
+
+## Installation
+
+From the Frappe Bench directory:
+
+    bench get-app internship_app
+    bench --site erpnext.localhost install-app internship_app
+    bench --site erpnext.localhost migrate
+
+## Usage
+
+1. Open ERPNext.
+2. Open the **Internship Management** module.
+3. Open **Internship Task**.
+4. Create a new internship task.
+5. Enter the required details.
+6. Save the task.
+7. Track its status and priority.
+
+## Project Result
+
+The application provides a custom internship task management system inside ERPNext.
+
+## License
+
+MIT License
